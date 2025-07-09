@@ -141,7 +141,8 @@ if __name__ == "__main__":
         modified_files = updater.get_modified_files()
 
         if not modified_files:
-            raise RuntimeError("Modified files not found.")
+            print("No changes detected.")
+            exit(0)
         
         updater.update_progress_table(modified_files)
     

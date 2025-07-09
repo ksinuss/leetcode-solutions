@@ -32,9 +32,38 @@
 - Форматирует информацию в таблицу Markdown
 - Сохраняет историю решений и обновляет статусы задач
 
-**Как использовать:**
+**Ручное обновление:**
 ```bash
 python update_readme.py
+```
+
+**Автоматическое обновление при каждом коммите:**
+
+1. Создать файл pre-commit hook в папке `.git/hooks` репозитория:
+```bash
+cd .git/hooks
+
+touch pre-commit # !без расширения!
+```
+
+2. Добавить в файл следующий код:
+```bash
+#!/bin/sh
+
+echo "Updating solutions table..."
+python scripts/update_readme.py
+
+if [ $? -ne 0 ]; then
+  echo "Error: Failed to update solutions table"
+  exit 1
+fi
+
+git add README.md
+```
+
+3. Сохранить файл и дать ему права на выполнение:
+```bash
+chmod +x pre-commit
 ```
 
 ## Требования
