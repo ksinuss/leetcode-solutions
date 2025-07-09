@@ -6,8 +6,8 @@
 
 // @lc code=start
 using namespace std;
-#include <vector>
 #include <string>
+#include <vector>
 #include <algorithm>
 
 class Solution {
