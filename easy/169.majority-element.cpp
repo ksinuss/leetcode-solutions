@@ -5,6 +5,8 @@
  */
 
 // @lc code=start
+using namespace std;
+#include <vector>
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -12,4 +14,3 @@ public:
     }
 };
 // @lc code=end
-
