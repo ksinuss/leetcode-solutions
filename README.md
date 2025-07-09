@@ -45,12 +45,13 @@ python update_readme.py
 ## Структура репозитория
 ```
 leetcode-solutions/
-├── easy/          # Решения легких задач (Easy)
-├── medium/        # Решения задач средней сложности (Medium)
-├── hard/          # Решения сложных задач (Hard)
-├── update_readme.py # Скрипт автообновления README
-├── README.md      # Этот файл
-└── LICENSE        # Лицензия MIT
+├── easy/                   # Решения легких задач
+├── medium/                 # Решения задач средней сложности
+├── hard/                   # Решения сложных задач
+├── scripts/
+│   ├── update_readme.py    # Скрипт автообновления README
+├── README.md               # Этот файл
+└── LICENSE                 # Лицензия MIT
 ```
 
 ## Лицензия
