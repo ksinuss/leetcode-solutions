@@ -21,11 +21,12 @@
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | easy | ✅ RESOLVED | [cpp](easy/1.two-sum.cpp) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | easy | ✅ RESOLVED | [cpp](easy/9.palindrome-number.cpp) |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | easy | ✅ RESOLVED | [cpp](easy/14.longest-common-prefix.cpp) |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | easy | ✅ RESOLVED | [cpp](easy/26.remove-duplicates-from-sorted-array.cpp) |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/description/) | easy | ✅ RESOLVED | [cpp](easy/66.plus-one.cpp) |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | easy | 🔒 IN PROGRESS | [cpp](easy/169.majority-element.cpp) |
 
-<!-- Last updated: 10-07-2025 11:21:51 -->
+<!-- Last updated: 10-07-2025 11:22:43 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
