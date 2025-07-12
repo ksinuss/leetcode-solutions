@@ -25,8 +25,9 @@
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/description/) | easy | ✅ RESOLVED | [cpp](easy/66.plus-one.cpp) |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | easy | ✅ RESOLVED | [cpp](easy/169.majority-element.cpp) |
+| 280 | [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/description/) | easy | 🔒 IN PROGRESS | [c](easy/263.ugly-number.c), [p](easy/263.ugly-number.p), [p](easy/263.ugly-number.p) |
 
-<!-- Last updated: 10-07-2025 22:00:53 -->
+<!-- Last updated: 13-07-2025 00:00:07 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:

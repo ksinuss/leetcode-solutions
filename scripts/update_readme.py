@@ -9,7 +9,7 @@ class ReadmeUpdater:
     # Initializes configuration
     def __init__(self):
         self.repo_root = Path(__file__).parent.parent
-        self.readme_path = os.path.join(self.repo_root, "README_test.md")
+        self.readme_path = os.path.join(self.repo_root, "README.md")
         self.cache_path = self.get_cache_path()
         self.solution_dirs = ["easy", "medium", "hard"]
 
