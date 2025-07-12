@@ -169,8 +169,7 @@ class ReadmeUpdater:
 if __name__ == "__main__":
     try:
         updater = ReadmeUpdater()
-        # modified_files = updater.get_modified_files()
-        modified_files = ['easy/1.two-sum.py', 'easy/66.plus-one.c']
+        modified_files = updater.get_modified_files()
 
         if not modified_files:
             print("No changes detected.")
