@@ -12,6 +12,7 @@ class ReadmeUpdater:
         self.readme_path = os.path.join(self.repo_root, "README.md")
         self.cache_path = self.get_cache_path()
         self.solution_dirs = ["easy", "medium", "hard"]
+        self.tasks_data = {}
 
     # Return the path to LeetCode cache of tasks
     @staticmethod
@@ -69,13 +70,15 @@ class ReadmeUpdater:
                 print(f"Error parsing row of table: {row}")
                 continue
         for new_solution in new_solutions:
+            new_extension = new_solution['extension']
             if new_solution['id'] in merged_rows:
-                new_extension = new_solution['extension']
                 old_extensions = merged_rows[new_solution['id']][1]
                 if new_extension in old_extensions:
                     new_solution['extension'] = old_extensions
                 else:
                     new_solution['extension'] = sorted([new_extension] + old_extensions)
+            else:
+                new_solution['extension'] = [new_extension]
             merged_rows[new_solution['id']] = new_solution
         sum_rows = []
         for task_id in sorted(merged_rows):
@@ -86,15 +89,16 @@ class ReadmeUpdater:
         return sum_rows
     
     # Loading task data from LeetCode cache
-    @staticmethod
-    def load_task_data(cache_path: str, id: int) -> dict:
+    def load_task_data(self, id: int) -> dict:
         try:
-            if not os.path.exists(cache_path):
-                raise FileNotFoundError(f"Cache file not found: {cache_path}")
+            if not os.path.exists(self.cache_path):
+                raise FileNotFoundError(f"Cache file not found: {self.cache_path}")
             
-            with open(cache_path, 'r', encoding='utf-8') as f:
-                cache_content = json.load(f)
-            return cache_content[len(cache_content) - id]
+            if not self.tasks_data:
+                with open(self.cache_path, 'r', encoding='utf-8') as f:
+                    cache_content = json.load(f)
+                self.tasks_data = {task['id']: task for task in cache_content}
+            return self.tasks_data[id]
         
         except Exception as e:
             raise RuntimeError(f"Error loading tasks data: {str(e)}")
@@ -104,7 +108,7 @@ class ReadmeUpdater:
         try:
             filepath_without_extension, solution_extension = modified_file.rsplit('.', 1)
             difficulty, file_name = filepath_without_extension.split('/', 1)
-            task_data = self.load_task_data(self.cache_path, int(file_name.split('.', 1)[0]))
+            task_data = self.load_task_data(int(file_name.split('.', 1)[0]))
             return {
                 'id': task_data.get('id'),
                 'name': task_data.get('name'),
