@@ -50,7 +50,7 @@ class ReadmeUpdater:
         if solution.get('status') == 'ac':
             status = "✅ RESOLVED"
         title = f"[{solution.get('name')}]({solution.get('link')})"
-        paths_solution = '\n'.join(f"[{ext}]({solution.get('filepath')}.{ext})" for ext in solution.get('extension'))
+        paths_solution = ', '.join(f"[{ext}]({solution.get('filepath')}.{ext})" for ext in solution.get('extension'))
         return f"| {solution['id']} | {title} | {solution.get('difficulty')} | {status} | {paths_solution} |\n"
     
     # Combining existing table rows with new solutions, sorting by task id
@@ -59,13 +59,15 @@ class ReadmeUpdater:
         for row in old_rows:
             try:
                 task_id = int(row.split('|', 2)[1].strip())
-                extension = row.rsplit('|', 2)[1].strip().split('\n')
-                merged_rows[task_id] = [row, extension]
+                extensions = []
+                for extension in row.rsplit('|', 2)[1].strip().split(', '):
+                    # old_row format extension: "[{extension}](filepath.{extension})"
+                    extensions.append(extension.rsplit('.', 1)[1][:-1])
+                merged_rows[task_id] = [row, extensions]
             
-            except ValueError:
+            except (ValueError, IndexError):
                 print(f"Error parsing row of table: {row}")
                 continue
-
         for new_solution in new_solutions:
             if new_solution['id'] in merged_rows:
                 new_extension = new_solution['extension']
@@ -92,7 +94,7 @@ class ReadmeUpdater:
             
             with open(cache_path, 'r', encoding='utf-8') as f:
                 cache_content = json.load(f)
-            return cache_content[len(cache_content) - 1 - id]
+            return cache_content[len(cache_content) - id]
         
         except Exception as e:
             raise RuntimeError(f"Error loading tasks data: {str(e)}")
@@ -100,9 +102,9 @@ class ReadmeUpdater:
     # Getting necessary info about task for the progress table
     def parse_task_info(self, modified_file: str) -> dict:
         try:
-            difficulty, file_name = modified_file.split('/')
-            solution_extension = file_name.split('.')[2]
-            task_data = self.load_task_data(self.cache_path, int(file_name.split('.')[0]))
+            filepath_without_extension, solution_extension = modified_file.rsplit('.', 1)
+            difficulty, file_name = filepath_without_extension.split('/', 1)
+            task_data = self.load_task_data(self.cache_path, int(file_name.split('.', 1)[0]))
             return {
                 'id': task_data.get('id'),
                 'name': task_data.get('name'),
@@ -110,7 +112,7 @@ class ReadmeUpdater:
                 'difficulty': difficulty,
                 'status': task_data.get('state'),
                 'extension': solution_extension,
-                'filepath': modified_file
+                'filepath': filepath_without_extension
             }
 
         except Exception as e:
@@ -168,7 +170,7 @@ if __name__ == "__main__":
     try:
         updater = ReadmeUpdater()
         # modified_files = updater.get_modified_files()
-        modified_files = ['easy/1.two-sum.cpp', 'easy/66.plus-one.py']
+        modified_files = ['easy/1.two-sum.py', 'easy/66.plus-one.c']
 
         if not modified_files:
             print("No changes detected.")

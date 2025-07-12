@@ -18,20 +18,15 @@
 
 | ID | TASK NAME | DIFFICULTY | STATUS | SOLUTION |
 |----|-----------|------------|--------|----------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | easy | ✅ RESOLVED | [cpp](easy/1.two-sum.cpp) |
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | easy | 🔒 IN PROGRESS | [c](easy/1.two-sum.cpp.c)
-[p](easy/1.two-sum.cpp.p)
-[p](easy/1.two-sum.cpp.p) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | easy | ✅ RESOLVED | [cpp](easy/1.two-sum.cpp), [py](easy/1.two-sum.py) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | easy | ✅ RESOLVED | [cpp](easy/9.palindrome-number.cpp) |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | easy | ✅ RESOLVED | [cpp](easy/14.longest-common-prefix.cpp) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | easy | ✅ RESOLVED | [cpp](easy/26.remove-duplicates-from-sorted-array.cpp) |
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/description/) | easy | ✅ RESOLVED | [cpp](easy/66.plus-one.cpp) |
-| 67 | [Add Binary](https://leetcode.com/problems/add-binary/description/) | easy | 🔒 IN PROGRESS | [p](easy/66.plus-one.py.p)
-[y](easy/66.plus-one.py.y) |
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/description/) | easy | ✅ RESOLVED | [c](easy/66.plus-one.c), [cpp](easy/66.plus-one.cpp), [py](easy/66.plus-one.py) |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | easy | ✅ RESOLVED | [cpp](easy/169.majority-element.cpp) |
 
-<!-- Last updated: 12-07-2025 01:08:09 -->
+<!-- Last updated: 12-07-2025 21:38:50 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
