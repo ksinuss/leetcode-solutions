@@ -36,7 +36,7 @@ public:
         if (!root) return 0;
         return 1 + accumulate(
             root->children.begin(), root->children.end(),
-            0,
+            0, 
             [&](int current_max, Node* child) {
                 return std::max(current_max, maxDepth(child));
             }

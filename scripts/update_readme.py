@@ -108,7 +108,7 @@ class ReadmeUpdater:
             difficulty, file_name = filepath_without_extension.split('/', 1)
             task_data = self.tasks_data[int(file_name.split('.', 1)[0])]
             return {
-                'id': task_data.get('id'),
+                'id': task_data.get('fid'),
                 'name': task_data.get('name'),
                 'link': task_data.get('link'),
                 'difficulty': difficulty,
