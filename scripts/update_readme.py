@@ -89,16 +89,14 @@ class ReadmeUpdater:
         return sum_rows
     
     # Loading task data from LeetCode cache
-    def load_task_data(self, id: int) -> dict:
+    def load_task_data(self) -> None:
         try:
             if not os.path.exists(self.cache_path):
                 raise FileNotFoundError(f"Cache file not found: {self.cache_path}")
             
-            if not self.tasks_data:
-                with open(self.cache_path, 'r', encoding='utf-8') as f:
-                    cache_content = json.load(f)
-                self.tasks_data = {task['id']: task for task in cache_content}
-            return self.tasks_data[id]
+            with open(self.cache_path, 'r', encoding='utf-8') as f:
+                cache_content = json.load(f)
+            self.tasks_data = {task['fid']: task for task in cache_content}
         
         except Exception as e:
             raise RuntimeError(f"Error loading tasks data: {str(e)}")
@@ -108,7 +106,7 @@ class ReadmeUpdater:
         try:
             filepath_without_extension, solution_extension = modified_file.rsplit('.', 1)
             difficulty, file_name = filepath_without_extension.split('/', 1)
-            task_data = self.load_task_data(int(file_name.split('.', 1)[0]))
+            task_data = self.tasks_data[int(file_name.split('.', 1)[0])]
             return {
                 'id': task_data.get('id'),
                 'name': task_data.get('name'),
@@ -179,6 +177,7 @@ if __name__ == "__main__":
             print("No changes detected.")
             exit(0)
         
+        updater.load_task_data()
         updater.update_progress_table(modified_files)
     
     except Exception as e:
