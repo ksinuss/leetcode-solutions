@@ -7,22 +7,19 @@
 // @lc code=start
 using namespace std;
 #include <vector>
-#include <iostream>
 
 class Solution {
 public:
     vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {
-        vector<vector<int>> result;
-        for (short int i = 0; i < grid.size(); ++i) {
-            result.push_back({});
-            for (short int j = 0; j < grid[i].size(); ++j) {
-                for (auto q : grid[(i - grid.size() / k) % grid.size()]) cout << q << " ";
-                result[i].push_back(grid[(i - grid.size() / k) % grid.size()][(j - k) % grid[i].size()]);
+        k %= (grid.size() * grid[0].size());
+        vector<vector<int>> result(grid.size(), vector<int>(grid[0].size()));
+        for (int i = 0; i < grid.size(); ++i) {
+            for (int j = 0; j < grid[0].size(); ++j) {
+                int new_pos = (i * grid[0].size() + j + grid.size() * grid[0].size() - k) % (grid.size() * grid[0].size());
+                result[i][j] = grid[new_pos / grid[0].size()][new_pos % grid[0].size()];
             }
-            cout << endl << (i - grid.size() / k) % grid.size() << endl;
         }
         return result;
     }
 };
 // @lc code=end
-
