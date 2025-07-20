@@ -27,11 +27,12 @@
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | easy | ✅ RESOLVED | [cpp](easy/169.majority-element.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | easy | ✅ RESOLVED | [cpp](easy/217.contains-duplicate.cpp) |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | easy | ✅ RESOLVED | [cpp](easy/242.valid-anagram.cpp) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/description/) | easy | ✅ RESOLVED | [cpp](easy/263.ugly-number.cpp) |
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/559.maximum-depth-of-n-ary-tree.cpp) |
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/) | easy | ✅ RESOLVED | [cpp](easy/1260.shift-2-d-grid.cpp) |
 
-<!-- Last updated: 20-07-2025 19:41:49 -->
+<!-- Last updated: 20-07-2025 20:45:04 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
