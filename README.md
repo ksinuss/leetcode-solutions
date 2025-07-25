@@ -27,14 +27,14 @@
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | easy | ✅ RESOLVED | [cpp](easy/169.majority-element.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | easy | ✅ RESOLVED | [cpp](easy/217.contains-duplicate.cpp) |
-| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) | medium | 🔒 IN PROGRESS | [cpp](medium/238.product-of-array-except-self.cpp) |
+| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) | medium | ✅ RESOLVED | [cpp](medium/238.product-of-array-except-self.cpp) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | easy | ✅ RESOLVED | [cpp](easy/242.valid-anagram.cpp) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/description/) | easy | ✅ RESOLVED | [cpp](easy/263.ugly-number.cpp) |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | medium | ✅ RESOLVED | [cpp](medium/347.top-k-frequent-elements.cpp) |
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/559.maximum-depth-of-n-ary-tree.cpp) |
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/) | easy | ✅ RESOLVED | [cpp](easy/1260.shift-2-d-grid.cpp) |
 
-<!-- Last updated: 24-07-2025 19:45:53 -->
+<!-- Last updated: 25-07-2025 11:19:02 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
