@@ -22,6 +22,7 @@
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | easy | ✅ RESOLVED | [cpp](easy/9.palindrome-number.cpp) |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | easy | ✅ RESOLVED | [cpp](easy/14.longest-common-prefix.cpp) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | easy | ✅ RESOLVED | [cpp](easy/26.remove-duplicates-from-sorted-array.cpp) |
+| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | medium | ✅ RESOLVED | [cpp](medium/36.valid-sudoku.cpp) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | medium | ✅ RESOLVED | [cpp](medium/49.group-anagrams.cpp) |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/description/) | easy | ✅ RESOLVED | [cpp](easy/66.plus-one.cpp) |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
@@ -34,7 +35,7 @@
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/559.maximum-depth-of-n-ary-tree.cpp) |
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/) | easy | ✅ RESOLVED | [cpp](easy/1260.shift-2-d-grid.cpp) |
 
-<!-- Last updated: 25-07-2025 11:19:02 -->
+<!-- Last updated: 27-07-2025 14:51:55 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
