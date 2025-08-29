@@ -26,6 +26,7 @@
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | medium | ✅ RESOLVED | [cpp](medium/49.group-anagrams.cpp) |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/description/) | easy | ✅ RESOLVED | [cpp](easy/66.plus-one.cpp) |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/104.maximum-depth-of-binary-tree.cpp) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | easy | ✅ RESOLVED | [cpp](easy/121.best-time-to-buy-and-sell-stock.cpp) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | easy | ✅ RESOLVED | [cpp](easy/169.majority-element.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | easy | ✅ RESOLVED | [cpp](easy/217.contains-duplicate.cpp) |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) | medium | ✅ RESOLVED | [cpp](medium/238.product-of-array-except-self.cpp) |
@@ -35,7 +36,7 @@
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/559.maximum-depth-of-n-ary-tree.cpp) |
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/) | easy | ✅ RESOLVED | [cpp](easy/1260.shift-2-d-grid.cpp) |
 
-<!-- Last updated: 27-07-2025 14:51:55 -->
+<!-- Last updated: 30-08-2025 01:02:02 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
