@@ -34,9 +34,10 @@
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/description/) | easy | ✅ RESOLVED | [cpp](easy/263.ugly-number.cpp) |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | medium | ✅ RESOLVED | [cpp](medium/347.top-k-frequent-elements.cpp) |
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/) | easy | ✅ RESOLVED | [cpp](easy/559.maximum-depth-of-n-ary-tree.cpp) |
+| 868 | [Binary Gap](https://leetcode.com/problems/binary-gap/description/) | easy | ✅ RESOLVED | [cpp](easy/868.binary-gap.cpp) |
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/) | easy | ✅ RESOLVED | [cpp](easy/1260.shift-2-d-grid.cpp) |
 
-<!-- Last updated: 30-08-2025 01:02:02 -->
+<!-- Last updated: 31-08-2025 00:50:14 -->
 
 ## Автоматическое обновление
 В репозитории реализована система автоматического обновления таблицы решений:
